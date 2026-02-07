@@ -22,12 +22,14 @@ bool is_pangram(std::string x){
     }
     return true;
 }
-void check_pangram(){    
+void check_pangram() {    
     std::string sentence;
     std::cout << "Enter a sentence: ";
-    std::getline(std::cin,sentence);
+    std::getline(std::cin, sentence);
 
-    if (is_pangram(sentence)) {std::cout << "Pangram";}
-    else {std::cout << "Not pangram";}
-}
+    if (is_pangram(sentence)) {
+        std::cout << "Pangram" << std::endl;
+    } else {
+        std::cout << "Not pangram" << std::endl;
+    }
 }  // namespace pangram
